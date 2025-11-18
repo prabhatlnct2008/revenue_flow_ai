@@ -135,16 +135,19 @@ export default function LeadForm({ onSubmit, showValueProps = true }: LeadFormPr
   };
 
   return (
-    <div className="w-full max-w-2xl mx-auto">
+    <div className="w-full max-w-3xl mx-auto">
       {showValueProps && (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-          <div className="bg-purple-600 bg-opacity-40 backdrop-blur-sm rounded-lg p-4 text-center text-white">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+          <div className="bg-purple-700 bg-opacity-40 backdrop-blur-sm rounded-xl p-4 text-center text-white border border-purple-400 border-opacity-30">
+            <div className="text-2xl mb-2">🗺️</div>
             <div className="text-sm font-medium">Map your current funnel</div>
           </div>
-          <div className="bg-purple-600 bg-opacity-40 backdrop-blur-sm rounded-lg p-4 text-center text-white">
+          <div className="bg-purple-700 bg-opacity-40 backdrop-blur-sm rounded-xl p-4 text-center text-white border border-purple-400 border-opacity-30">
+            <div className="text-2xl mb-2">💡</div>
             <div className="text-sm font-medium">Show you 2-3 specific places AI can add revenue</div>
           </div>
-          <div className="bg-purple-600 bg-opacity-40 backdrop-blur-sm rounded-lg p-4 text-center text-white">
+          <div className="bg-purple-700 bg-opacity-40 backdrop-blur-sm rounded-xl p-4 text-center text-white border border-purple-400 border-opacity-30">
+            <div className="text-2xl mb-2">✅</div>
             <div className="text-sm font-medium">Tell you honestly if we're a good fit or not</div>
           </div>
         </div>
@@ -256,7 +259,7 @@ export default function LeadForm({ onSubmit, showValueProps = true }: LeadFormPr
           </button>
 
           {/* Privacy Notice */}
-          <p className="text-center text-sm text-gray-500">
+          <p className="text-center text-sm text-gray-600">
             We respect your privacy. Your information will never be shared with third parties.
           </p>
         </form>
@@ -264,30 +267,30 @@ export default function LeadForm({ onSubmit, showValueProps = true }: LeadFormPr
 
       {/* Trust indicators */}
       <div className="mt-6 text-center">
-        <p className="text-sm font-semibold text-gray-700 mb-3">
+        <p className="text-sm font-semibold text-white mb-3">
           Trusted by service businesses across India
         </p>
-        <div className="flex flex-wrap justify-center items-center gap-6 text-xs text-gray-600">
+        <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 text-xs text-white">
           <div className="flex items-center gap-1">
-            <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+            <svg className="w-4 h-4 text-green-300" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
             </svg>
             <span>No obligation</span>
           </div>
           <div className="flex items-center gap-1">
-            <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+            <svg className="w-4 h-4 text-green-300" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
             </svg>
             <span>Free consultation</span>
           </div>
           <div className="flex items-center gap-1">
-            <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+            <svg className="w-4 h-4 text-green-300" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
             </svg>
             <span>Instant value</span>
           </div>
           <div className="flex items-center gap-1">
-            <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+            <svg className="w-4 h-4 text-green-300" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
             </svg>
             <span>Clear pricing</span>

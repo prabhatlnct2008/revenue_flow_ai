@@ -94,41 +94,41 @@ const businesses: BusinessCard[] = [
 
 export default function BusinessCards() {
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+    <section className="py-16 bg-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
             What This Looks Like for{' '}
-            <span className="text-purple-600">Real Businesses</span>
+            <span className="text-pink-600">Real Businesses</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base text-gray-600">
             See how AI-powered revenue flows work across different industries
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {businesses.map((business, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+              className="relative overflow-hidden rounded-xl shadow-lg"
             >
               {/* Gradient background */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${business.gradient} opacity-90`}></div>
+              <div className={`absolute inset-0 bg-gradient-to-br ${business.gradient}`}></div>
 
               {/* Content */}
-              <div className="relative p-8 text-white h-full flex flex-col">
-                <div className="text-6xl mb-4">{business.icon}</div>
-                <h3 className="text-2xl font-bold mb-3">{business.title}</h3>
-                <p className="text-white text-opacity-90 mb-6 flex-grow">
+              <div className="relative p-8 text-white">
+                <div className="text-5xl mb-3">{business.icon}</div>
+                <h3 className="text-xl font-bold mb-2">{business.title}</h3>
+                <p className="text-white text-opacity-95 mb-4 text-sm">
                   {business.description}
                 </p>
 
                 {/* Benefits list */}
-                <ul className="space-y-2">
+                <ul className="space-y-1.5">
                   {business.benefits.map((benefit, idx) => (
                     <li key={idx} className="flex items-start gap-2">
                       <svg
-                        className="w-5 h-5 mt-0.5 flex-shrink-0"
+                        className="w-4 h-4 mt-0.5 flex-shrink-0"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >

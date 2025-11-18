@@ -31,28 +31,28 @@ export function WhatYouLack() {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+    <section className="py-16 bg-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
             What Does Your Funnel <span className="text-red-600">Lack?</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base text-gray-600">
             Most businesses lose 60-80% of potential revenue due to these gaps
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {lackItems.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-red-500"
+              className="bg-gray-50 rounded-lg p-6 shadow-md border-l-4 border-red-500"
             >
-              <div className="text-5xl mb-4">{item.icon}</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              <div className="text-4xl mb-3">{item.icon}</div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 {item.title}
               </h3>
-              <p className="text-gray-600">{item.description}</p>
+              <p className="text-sm text-gray-600">{item.description}</p>
             </div>
           ))}
         </div>
@@ -86,26 +86,26 @@ export function WhyAI({ onOpenModal }: WhyAIProps) {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-purple-900 to-indigo-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+    <section className="py-16 bg-gradient-to-br from-purple-900 to-indigo-900 text-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3">
             Why This is a <span className="text-yellow-300">pro AI?</span>
           </h2>
-          <p className="text-xl text-purple-200 max-w-3xl mx-auto">
+          <p className="text-base text-purple-200">
             The results speak for themselves
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
           {reasons.map((reason, index) => (
             <div
               key={index}
-              className="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6 border border-white border-opacity-20"
+              className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-6"
             >
-              <div className="text-5xl mb-4">{reason.icon}</div>
-              <h3 className="text-2xl font-semibold mb-3">{reason.title}</h3>
-              <p className="text-purple-100">{reason.description}</p>
+              <div className="text-4xl mb-3">{reason.icon}</div>
+              <h3 className="text-xl font-semibold mb-2">{reason.title}</h3>
+              <p className="text-sm text-purple-100">{reason.description}</p>
             </div>
           ))}
         </div>
@@ -113,7 +113,7 @@ export function WhyAI({ onOpenModal }: WhyAIProps) {
         <div className="text-center">
           <button
             onClick={onOpenModal}
-            className="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-gray-900 font-bold px-10 py-5 rounded-lg text-xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-200"
+            className="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-gray-900 font-bold px-8 py-4 rounded-lg text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200"
           >
             Get Your Free AI Revenue Analysis →
           </button>
@@ -148,30 +148,30 @@ export function SaveTimeMoney() {
   ];
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+    <section className="py-16 bg-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
             Save Time And <span className="text-green-600">Money</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base text-gray-600">
             See the tangible impact AI can have on your business
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {savings.map((saving, index) => (
             <div
               key={index}
-              className="text-center p-8 bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl shadow-lg"
+              className="text-center p-6 bg-white rounded-lg shadow-md"
             >
-              <div className="text-5xl font-bold text-green-600 mb-2">
+              <div className="text-4xl font-bold text-green-600 mb-1">
                 {saving.metric}
               </div>
-              <div className="text-xl font-semibold text-gray-900 mb-2">
+              <div className="text-lg font-semibold text-gray-900 mb-1">
                 {saving.unit}
               </div>
-              <p className="text-gray-600">{saving.description}</p>
+              <p className="text-xs text-gray-600">{saving.description}</p>
             </div>
           ))}
         </div>
@@ -205,33 +205,28 @@ export function HowItWorks() {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+    <section className="py-16 bg-gray-50">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
             How Does <span className="text-purple-600">This Work?</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base text-gray-600">
             Get started in 4 simple steps
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {steps.map((step, index) => (
             <div key={index} className="relative">
-              {/* Connector line */}
-              {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-12 left-[60%] w-[80%] h-0.5 bg-purple-300"></div>
-              )}
-
-              <div className="relative bg-white rounded-xl p-6 shadow-lg text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+              <div className="relative bg-white rounded-lg p-6 shadow-md text-center">
+                <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-3">
                   {step.number}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   {step.title}
                 </h3>
-                <p className="text-gray-600">{step.description}</p>
+                <p className="text-sm text-gray-600">{step.description}</p>
               </div>
             </div>
           ))}
