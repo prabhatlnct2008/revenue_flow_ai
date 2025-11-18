@@ -21,21 +21,21 @@ export default function Hero({ onOpenModal, onOpenEmailModal }: HeroProps) {
           </div>
 
           {/* Main headline */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-gray-900 leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8 text-gray-900 leading-tight">
             Turn Your Existing Marketing<br />
             into a <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Predictable Revenue<br />
             Engine</span> with AI
           </h1>
 
           {/* Subheadline */}
-          <p className="text-lg sm:text-xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
             We use AI to rebuild your landing pages, ads and follow-up so you close more
             customers from the traffic you already pay for — and automate the manual work around
             it.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <button
               onClick={onOpenModal}
               className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-lg text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
@@ -57,7 +57,7 @@ export default function Hero({ onOpenModal, onOpenEmailModal }: HeroProps) {
           </div>
 
           {/* Note */}
-          <p className="text-sm text-gray-500 mb-16">
+          <p className="text-sm text-gray-500 mb-24">
             30-minute strategy call. No obligation. We'll show you exactly where AI can add revenue in your funnel.
           </p>
 
